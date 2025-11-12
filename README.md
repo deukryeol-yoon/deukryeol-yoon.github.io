@@ -1,1 +1,0 @@
-# deukryeol-yoon.github.io
