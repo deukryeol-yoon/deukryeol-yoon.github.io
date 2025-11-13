@@ -363,7 +363,7 @@ ul#nav li.current a { color: #F06000; }
 #resume .header-col { padding-top: 9px; }
 #resume .main-col { padding-right: 10%; }
 
-#resume .education, .work, .awards, .teaching {
+#resume .news, .education, .work, .awards, .teaching {
    padding-bottom: 10px;
    margin-top: 10px;
    margin-bottom: 0px;
