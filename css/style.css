@@ -212,6 +212,10 @@ a:hover {
   font-size: 1.05rem;
 }
 
+.timeline-date::before {
+  content: "| ";
+}
+
 .timeline-date {
   color: #a0aec0;
   font-size: 0.9rem;
@@ -283,6 +287,14 @@ a:hover {
 
 /* ===== Responsive: Tablet ===== */
 @media (max-width: 991.98px) {
+  .timeline-date {
+    display: block;
+  }
+
+  .timeline-date::before {
+    content: none;
+  }
+  
   .sidebar-card {
     display: flex;
     flex-wrap: wrap;
