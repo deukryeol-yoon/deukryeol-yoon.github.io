@@ -153,11 +153,9 @@ a:hover {
 }
 
 .entry .author {
-  font: 15px/24px 'opensans-regular', sans-serif;
   text-decoration: underline;
+  font-style: normal;
   color: #000000;
-  margin-bottom: 3px;
-  margin-top: 3px;
 }
 
 .entry-img {
