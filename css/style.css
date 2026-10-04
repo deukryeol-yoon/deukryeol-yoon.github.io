@@ -152,7 +152,7 @@ a:hover {
   background-color: #ebf4ff;
 }
 
-#research .author {
+.entry .author {
   font: 15px/24px 'opensans-regular', sans-serif;
   text-decoration: underline;
   color: #000000;
