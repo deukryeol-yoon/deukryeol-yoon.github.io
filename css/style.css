@@ -369,7 +369,24 @@ a:hover {
   padding-top: 0.1rem;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
+  .contact-links li {
+    display: inline-block;
+    margin: 0 0.3rem;
+  }
+
+  /* 첫 번째 항목(Email)은 따로 한 줄 */
+  .contact-links li:first-child {
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+
+  /* 링크 사이에 구분선 | 넣기 */
+  .contact-links li:not(:first-child):not(:last-child)::after {
+    content: "|";
+    margin-left: 0.6rem;
+    color: #999;
+  }
   .entry {
     display: block;
     text-align: left;
