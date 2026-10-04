@@ -388,6 +388,11 @@ a:hover {
 }
 
 @media (max-width: 575.98px) {
+  .profile-img {
+    width: 60%;
+    max-width: 260px;
+  }
+  
   .contact-links li {
     display: inline-block;
     margin: 0 0.3rem;
