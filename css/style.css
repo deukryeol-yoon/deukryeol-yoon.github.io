@@ -1,0 +1,371 @@
+/* ===== Base ===== */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+body {
+  font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #2d3748;
+  background-color: #f7fafc;
+}
+
+/* ===== Typography ===== */
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  color: #1a202c;
+}
+
+a {
+  color: #2b6cb0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2c5282;
+  text-decoration: underline;
+}
+
+/* ===== Navbar ===== */
+.navbar-custom {
+  background-color: #1a202c;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  font-weight: 600;
+  padding: 0.5rem 1rem !important;
+  transition: color 0.2s;
+}
+
+/* ===== Sidebar ===== */
+.profile-img {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+}
+
+.sidebar-name {
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.sidebar-title {
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 0.25rem;
+}
+
+.sidebar-at {
+  font-weight: 400;
+  color: #718096;
+  font-size: 0.9em;
+}
+
+.sidebar-affiliation {
+  font-size: 0.9rem;
+  color: #718096;
+  line-height: 1.5;
+}
+
+.contact-links {
+  margin-top: 1rem;
+}
+
+.contact-links li {
+  margin-bottom: 0.4rem;
+}
+
+.contact-links a {
+  font-weight: 600;
+}
+
+@media (min-width: 992px) {
+  .sidebar-col {
+    position: sticky;
+    top: 80px; /* fallback; overridden by main.js */
+    align-self: start;
+  }
+}
+
+/* ===== News ===== */
+.news-item {
+  margin-bottom: 0.35rem;
+  line-height: 1.6;
+}
+
+.news-date {
+  font-weight: 700;
+  color: #1a202c;
+}
+
+.news-toggle {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* ===== Section Headings ===== */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.25rem;
+  margin-top: 2rem;
+  border-bottom: 3px solid #2b6cb0;
+  display: inline-block;
+}
+
+.section-title:first-child {
+  margin-top: 0;
+}
+
+/* ===== Section Dividers ===== */
+.section-divider {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin: 2rem 0;
+}
+
+/* ===== Publication / Project Entry ===== */
+.entry {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.entry:hover {
+  background-color: #ebf4ff;
+}
+
+.entry-img {
+  flex-shrink: 0;
+  width: 192px;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.entry-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.entry-text .entry-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.entry-meta {
+  font-size: 0.88rem;
+  color: #718096;
+  margin-top: 0.25rem;
+}
+
+.entry-links {
+  margin-top: 0.5rem;
+}
+
+.entry-links a {
+  margin: 0 0.25rem;
+}
+
+.award-badge {
+  color: #c53030;
+  font-weight: 600;
+}
+
+/* ===== Timeline Entry (Education / Work) ===== */
+.timeline-entry {
+  margin-bottom: 1.25rem;
+  padding-left: 1rem;
+  border-left: 3px solid #e2e8f0;
+  transition: border-color 0.2s;
+}
+
+.timeline-entry:hover {
+  border-left-color: #2b6cb0;
+}
+
+.timeline-org {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.timeline-date {
+  color: #a0aec0;
+  font-size: 0.9rem;
+}
+
+.timeline-role {
+  color: #4a5568;
+}
+
+/* ===== Honors / Awards ===== */
+.honors-list {
+  list-style: none;
+  padding: 0;
+}
+
+.honors-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.honors-list li::before {
+  content: '\2022';
+  position: absolute;
+  left: 0;
+  color: #2b6cb0;
+  font-weight: bold;
+}
+
+/* ===== Skills ===== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 1.5rem;
+  align-items: baseline;
+}
+
+.skills-grid dt {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.skills-grid dd {
+  margin: 0;
+  color: #4a5568;
+}
+
+/* ===== Sub-section Labels ===== */
+.subsection-label {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #4a5568;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.25rem;
+}
+
+/* ===== Footer ===== */
+.page-footer {
+  text-align: center;
+  padding: 2rem 0 1rem;
+  font-size: 0.85rem;
+  color: #a0aec0;
+  border-top: 1px solid #e2e8f0;
+  margin-top: 3rem;
+}
+
+/* ===== Responsive: Tablet ===== */
+@media (max-width: 991.98px) {
+  .sidebar-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .profile-img {
+    max-width: 160px;
+  }
+
+  .entry-img {
+    width: 140px;
+  }
+}
+
+/* ===== Responsive: Mobile ===== */
+@media (max-width: 575.98px) {
+  .entry {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .entry-img {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .profile-img {
+    max-width: 140px;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-entry {
+    padding-left: 0.75rem;
+  }
+}
+
+/* ===== Print ===== */
+@media print {
+  .navbar {
+    display: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+    background: white;
+  }
+
+  .entry:hover {
+    background-color: transparent;
+  }
+}
+
+/* ===== Site-specific additions (deukryeol-yoon.github.io) ===== */
+.sidebar-korean {
+  color: #718096;
+  font-size: 0.95rem;
+  margin-top: -0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-label {
+  font-weight: 600;
+}
+
+/* Publication label (e.g. [C4]) shown in place of a thumbnail */
+.entry-label {
+  flex-shrink: 0;
+  width: 3.25rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: #2b6cb0;
+  padding-top: 0.1rem;
+}
+
+@media (max-width: 575.98px) {
+  .entry-label {
+    width: auto;
+    margin-bottom: 0.25rem;
+  }
+}
