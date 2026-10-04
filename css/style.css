@@ -139,6 +139,12 @@ a:hover {
 }
 
 /* ===== Publication / Project Entry ===== */
+.pub-legend {
+  color: #a0aec0;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
 .entry {
   display: flex;
   gap: 1rem;
