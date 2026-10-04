@@ -152,6 +152,14 @@ a:hover {
   background-color: #ebf4ff;
 }
 
+#research .author {
+  font: 15px/24px 'opensans-regular', sans-serif;
+  text-decoration: underline;
+  color: #000000;
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+
 .entry-img {
   flex-shrink: 0;
   width: 192px;
