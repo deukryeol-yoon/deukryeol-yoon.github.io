@@ -369,9 +369,14 @@ a:hover {
   padding-top: 0.1rem;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
+  .entry {
+    display: block;
+    text-align: left;
+  }
+
   .entry-label {
-    width: auto;
-    margin-bottom: 0.25rem;
+    float: left;
+    margin-right: 0.4rem;
   }
 }
